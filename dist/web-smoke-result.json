@@ -1,0 +1,6 @@
+{
+  "result": "passed",
+  "nonBlank": true,
+  "browser": "msedge.exe",
+  "screenshot": "dist/web-smoke.png"
+}
