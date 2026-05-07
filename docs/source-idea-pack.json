@@ -1,0 +1,66 @@
+{
+  "rank": 75,
+  "domain": "WebApp",
+  "ideaNo": 4,
+  "ideaName": "制作物ギャラリー・素材レビュー・公開Docs",
+  "repository": "portfolio-gallery-asset-review-docs",
+  "publish": "GitHub Pages / GitHub Release",
+  "createdIdeaLookup": {
+    "exactPathFirst": "D:/AI/WebApp/created_idea_004_portfolio-gallery-asset-review-docs",
+    "exactPathExists": true,
+    "fallbackSearched": false,
+    "fallbackResults": [],
+    "notes": "完全一致の created_idea と ZIP を使用した。"
+  },
+  "zipLookup": {
+    "exactZip": "D:/AI/WebApp/created_idea_004_portfolio-gallery-asset-review-docs/idea_004_portfolio-gallery-asset-review-docs.zip",
+    "exactZipExists": true,
+    "requiredFiles": [
+      "metadata.json",
+      "README.md",
+      "01_REQUIREMENTS.md",
+      "02_SPECIFICATION.md",
+      "03_DESIGN.md",
+      "04_IMPLEMENTATION_PLAN.md",
+      "05_TEST_PLAN.md",
+      "06_RELEASE_CHECKLIST.md"
+    ],
+    "missingRequiredFiles": []
+  },
+  "zipMetadata": {
+    "domain": "WebApp",
+    "no": 4,
+    "platform": "WebApp",
+    "field": "制作物・公開管理",
+    "integration": "",
+    "idea": "制作物ギャラリー・素材レビュー・公開Docs",
+    "overview": "画像、生成物、BOOTH商品、素材CRM、3D/Blender/Unity素材レビュー、Markdown公開ドキュメントをまとめる。",
+    "problem": "制作物、販売素材、レビュー、公開Docsが分かれ、更新漏れや再利用漏れが起きやすい。",
+    "similar": "Notion, GitHub Pages, BOOTH, Eagle, Frame.io",
+    "diff": "制作物の見た目、販売情報、レビュー、公開文書を同じWeb管理画面で扱う。",
+    "parent": "Apps",
+    "startPromptFile": "START_PROMPT.md",
+    "documents": [
+      "START_PROMPT.md",
+      "README.md",
+      "01_REQUIREMENTS.md",
+      "02_SPECIFICATION.md",
+      "03_DESIGN.md",
+      "04_IMPLEMENTATION_PLAN.md",
+      "05_TEST_PLAN.md",
+      "06_RELEASE_CHECKLIST.md",
+      "metadata.json"
+    ],
+    "repositoryName": "portfolio-gallery-asset-review-docs",
+    "repositoryTitle": "portfolio-gallery-asset-review-docs",
+    "zipFile": "idea_004_portfolio-gallery-asset-review-docs.zip"
+  },
+  "metadataRepositoryMatches": true,
+  "metadataZipMatches": true,
+  "initialRepositoryReadme": {
+    "existedBeforeCreation": false,
+    "note": "正式 repo が存在しなかったため README.md は存在しないと記録し、domain docs と created_idea ZIP を根拠に作成した。"
+  },
+  "mojibakePolicy": "ZIP本文や既存Markdownは丸写しせず、PICKUP行、metadata、domain docsから正式docsを再構成する。",
+  "unstableEvidencePolicy": "ZIPサイズ、生成時刻、絶対一時パスはQCDS固定根拠に使わない。"
+}

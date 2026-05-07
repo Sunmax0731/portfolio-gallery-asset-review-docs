@@ -1,0 +1,21 @@
+{
+  "product": {
+    "repository": "portfolio-gallery-asset-review-docs",
+    "title": "制作物ギャラリー・素材レビュー・公開Docs"
+  },
+  "items": [
+    {
+      "id": "portfolio-gallery-asset-review-docs-happy",
+      "title": "制作物ギャラリー・素材レビュー・公開Docs happy",
+      "status": "ready",
+      "tags": [
+        "webapp"
+      ],
+      "assetPath": "samples/happy.asset",
+      "reviewStatus": "approved",
+      "publicDoc": "docs/user-guide.md",
+      "owner": "closed-alpha",
+      "thumbnailPath": "制作物ギャラリー・素材レビュー・公開Docs の確認観点"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+[
+  {
+    "id": "happy-path",
+    "purpose": "制作物ギャラリー・素材レビュー・公開Docs の正常入力を検証する",
+    "items": [
+      {
+        "id": "portfolio-gallery-asset-review-docs-happy",
+        "title": "制作物ギャラリー・素材レビュー・公開Docs happy",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "assetPath": "samples/happy.asset",
+        "reviewStatus": "approved",
+        "publicDoc": "docs/user-guide.md",
+        "owner": "closed-alpha",
+        "thumbnailPath": "制作物ギャラリー・素材レビュー・公開Docs の確認観点"
+      }
+    ],
+    "expected": {
+      "result": "passed",
+      "errors": 0,
+      "warnings": 0
+    }
+  },
+  {
+    "id": "missing-required",
+    "purpose": "必須項目不足を error として検出する",
+    "items": [
+      {
+        "id": "portfolio-gallery-asset-review-docs-missing",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "assetPath": "samples/missing.asset",
+        "reviewStatus": "approved",
+        "publicDoc": "docs/user-guide.md",
+        "owner": "closed-alpha",
+        "thumbnailPath": "制作物ギャラリー・素材レビュー・公開Docs の確認観点"
+      }
+    ],
+    "expected": {
+      "result": "failed",
+      "errors": 1,
+      "warnings": 0
+    }
+  },
+  {
+    "id": "warning",
+    "purpose": "推奨項目不足を warning として検出する",
+    "items": [
+      {
+        "id": "portfolio-gallery-asset-review-docs-warning",
+        "title": "制作物ギャラリー・素材レビュー・公開Docs warning",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "assetPath": "samples/warning.asset",
+        "reviewStatus": "approved",
+        "publicDoc": "docs/user-guide.md",
+        "owner": "closed-alpha"
+      }
+    ],
+    "expected": {
+      "result": "warning",
+      "errors": 0,
+      "warnings": 1
+    }
+  },
+  {
+    "id": "mixed-batch",
+    "purpose": "正常、必須不足、警告を同一バッチで集計する",
+    "items": [
+      {
+        "id": "portfolio-gallery-asset-review-docs-happy",
+        "title": "制作物ギャラリー・素材レビュー・公開Docs happy",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "assetPath": "samples/happy.asset",
+        "reviewStatus": "approved",
+        "publicDoc": "docs/user-guide.md",
+        "owner": "closed-alpha",
+        "thumbnailPath": "制作物ギャラリー・素材レビュー・公開Docs の確認観点"
+      },
+      {
+        "id": "portfolio-gallery-asset-review-docs-missing",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "assetPath": "samples/missing.asset",
+        "reviewStatus": "approved",
+        "publicDoc": "docs/user-guide.md",
+        "owner": "closed-alpha",
+        "thumbnailPath": "制作物ギャラリー・素材レビュー・公開Docs の確認観点"
+      },
+      {
+        "id": "portfolio-gallery-asset-review-docs-warning",
+        "title": "制作物ギャラリー・素材レビュー・公開Docs warning",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "assetPath": "samples/warning.asset",
+        "reviewStatus": "approved",
+        "publicDoc": "docs/user-guide.md",
+        "owner": "closed-alpha"
+      }
+    ],
+    "expected": {
+      "result": "failed",
+      "errors": 1,
+      "warnings": 1
+    }
+  }
+]
