@@ -1,52 +1,16 @@
 {
-  "repo": "portfolio-gallery-asset-review-docs",
+  "product": "portfolio-gallery-asset-review-docs",
+  "repository": "Sunmax0731/portfolio-gallery-asset-review-docs",
   "githubUrl": "https://github.com/Sunmax0731/portfolio-gallery-asset-review-docs",
   "releaseUrl": "https://github.com/Sunmax0731/portfolio-gallery-asset-review-docs/releases/tag/v0.1.0-alpha.1",
   "tag": "v0.1.0-alpha.1",
   "prerelease": true,
-  "latestFalseCheck": {
-    "latestEndpoint": "404-or-no-stable-release",
-    "latestTag": null,
-    "doesNotReturnThisTag": true
-  },
-  "releaseAssetNames": [
-    "manual-test.md",
-    "portfolio-gallery-asset-review-docs-docs.zip",
-    "strict-manual-test-addendum.md"
-  ],
-  "releaseAssetCount": 3,
-  "qcdsEvaluation": {
-    "Quality": "S-",
-    "Cost": "S-",
-    "Delivery": "S-",
-    "Satisfaction": "S-",
-    "capReason": "manual-test-not-run-by-codex"
-  },
-  "automatedTests": [
-    {
-      "command": "npm test",
-      "result": "passed"
-    }
-  ],
-  "docsZipPath": "dist/portfolio-gallery-asset-review-docs-docs.zip",
-  "mainOriginClean": {
-    "aheadBehind": "0\t0",
-    "status": "## main...origin/main",
-    "clean": true
-  },
-  "codexBranchCleanup": {
-    "local": [],
-    "remote": [],
-    "clean": true
-  },
-  "manualTestsNotRun": [
-    "実ホスト/実ブラウザでの継続利用確認",
-    "公開先での表示確認",
-    "ユーザーによるS+昇格判断"
-  ],
-  "product": "portfolio-gallery-asset-review-docs",
-  "repository": "Sunmax0731/portfolio-gallery-asset-review-docs",
   "latest": false,
+  "latestCheck": {
+    "endpoint": "not-found-or-no-stable-release",
+    "latestTag": null,
+    "latestIsThisPrerelease": false
+  },
   "assetCount": 3,
   "assets": {
     "required": [
@@ -62,14 +26,37 @@
     "actualCount": 3,
     "allRequiredPresent": true
   },
-  "platformRuntimeGate": "dist/platform-runtime-gate-result.json",
-  "platformType": "browser-web",
+  "qcdsEvaluation": {
+    "Quality": "S-",
+    "Cost": "S-",
+    "Delivery": "S-",
+    "Satisfaction": "S-"
+  },
+  "platformRuntimeGate": {
+    "product": "portfolio-gallery-asset-review-docs",
+    "platformType": "browser-web",
+    "pass": true,
+    "method": "runtime-gate",
+    "manualTest": "not-run-by-codex",
+    "index": "public/index.html",
+    "browser": "chrome.exe",
+    "evidence": "dist/web-smoke-result.json"
+  },
+  "automatedTests": [
+    {
+      "command": "npm test",
+      "result": "passed"
+    }
+  ],
   "manualTest": "not-run-by-codex",
-  "github": {
-    "repo": "Sunmax0731/portfolio-gallery-asset-review-docs",
-    "url": "https://github.com/Sunmax0731/portfolio-gallery-asset-review-docs",
-    "releaseUrl": "https://github.com/Sunmax0731/portfolio-gallery-asset-review-docs/releases/tag/v0.1.0-alpha.1",
-    "prerelease": true,
-    "latest": false
+  "git": {
+    "ahead": 0,
+    "behind": 0,
+    "status": "",
+    "localCodex": [
+      "codex/closed-alpha-release"
+    ],
+    "remoteCodex": [],
+    "clean": false
   }
 }
