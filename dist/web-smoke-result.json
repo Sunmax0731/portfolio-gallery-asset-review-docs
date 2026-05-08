@@ -1,6 +1,15 @@
 {
+  "product": "portfolio-gallery-asset-review-docs",
   "result": "passed",
-  "nonBlank": true,
-  "browser": "msedge.exe",
-  "screenshot": "dist/web-smoke.png"
+  "method": "chrome-headless-file-screenshot",
+  "browser": "chrome.exe",
+  "index": "public/index.html",
+  "checks": {
+    "nonBlankScreenshot": true,
+    "htmlHasContent": true,
+    "productMarker": true,
+    "noFrameworkOverlay": true
+  },
+  "screenshotBytesStableThreshold": ">1000",
+  "manualBrowserTest": "not-run-by-codex"
 }
