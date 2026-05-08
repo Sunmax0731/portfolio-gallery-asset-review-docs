@@ -1,0 +1,13 @@
+{
+  "product": "portfolio-gallery-asset-review-docs",
+  "title": "制作物ギャラリー・素材レビュー・公開Docs",
+  "domain": "WebApp",
+  "ideaNo": 4,
+  "platformType": "browser-web",
+  "expectedPublicTarget": "GitHub Pages / GitHub Release",
+  "browser": {
+    "evidence": "dist/web-smoke-result.json"
+  },
+  "android": null,
+  "evidence": "dist/platform-runtime-gate-result.json"
+}
